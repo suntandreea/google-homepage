@@ -73,10 +73,7 @@ a:hover {
 .g-apps {
     width: 24px;
     height: 24px;
-}
-
-svg, path {
-    color: #5f6368;
+    fill: #5f6368;
 }
 
 /* MAIN SECTIONS */
@@ -88,6 +85,8 @@ section {
     flex-shrink: 0;
     box-sizing: border-box;
 }
+
+/* GOOGLE LOGO SECTION */
 
 .google-logo {
     min-height: 92px;
@@ -110,50 +109,90 @@ section {
     width: auto;
 }
 
-.search-form {
+/* SEARCH FORM SECTION */
+
+.google-search {
     padding: 20px;
     max-height: 160px;
 }
 
+form {
+    width: 100%;
+}
+
+.search-container {
+    width: auto;
+    max-width: 584px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+    
 .search-box {
     width: auto;
     max-width: 584px;
-    /* width: 584px; */
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
-    z-index: 3;
     height: 44px;
     margin: 0 auto;
-    padding: 5px 14px;
+}
+
+.search-box:hover {
+    box-shadow: 0 2px 4px rgba(32,33,36,0.15),
+                0 -1px 4px rgba(32,33,36,.05);
+}
+
+.inner {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
 }
 
 .search-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -5px;
+}
+
+.left {
+    padding-right: 13px;
+    
 }
 
 .ico {
     height: 20px;
     width: 20px;
-    color: #9aa0a6;
+    fill: #9aa0a6;
 }
 
 .search-text {
-    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.transp {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
 }
 
 input[type=text] {
-    background: pink;
+    background-color: transparent;
     border: none;
-    outline: none;
+    margin: 0;
+    padding: 0;
     color: rgba(0,0,0,.87);
     word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -37px;
+    height: 34px;
     font-size: 16px;
 }
 
@@ -182,6 +221,8 @@ input[type=submit] {
 input[type=submit]:hover {
     border-color: #ddd;
 }
+
+/* LANGUAGES SECTION */
 
 .google-languages {
     flex-grow: 1;
