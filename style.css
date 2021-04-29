@@ -1,7 +1,7 @@
 body, input {
     font-size: 14px;
-    font-family: Roboto, Arial, sans-serif;
-    color: green;
+    font-family: Arial, sans-serif;
+    color: #222;
 }
 
 a {
@@ -63,10 +63,146 @@ svg, path {
     color: #5f6368;
 }
 
+/* MAIN CONTENT */
 
-
-
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .logo {
     max-height: 92px;
+}
+
+.search-form {
+    padding: 20px;
+    max-height: 160px;
+}
+
+.search-box {
+    width: auto;
+    max-width: 584px;
+    width: 584px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    padding: 5px 14px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico {
+    height: 20px;
+    width: 20px;
+    color: #9aa0a6;
+}
+
+.search-text {
+    width: 100%;
+}
+
+input[type=text] {
+    background: pink;
+    border: none;
+    outline: none;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+input[type=submit] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type=submit]:hover {
+    border-color: #ddd;
+}
+
+.add-lang {
+    font-size: small;
+    margin-bottom: 24px;
+    line-height: 28px;
+}
+
+.add-lang a {
+    padding: 0 3px;
+}
+
+.add-lang a:visited {
+    color: #609;
+}
+
+/* FOOTER */
+
+footer {
+    background: #f2f2f2;
+    font-size: 15px;
+}
+
+.country {
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+    color: rgba(0,0,0,.54);
+}
+
+.ft-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.ft-link {
+    color: #70757a;
+}
+
+.ft-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ft-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer li {
+    padding: 15px;
 }
