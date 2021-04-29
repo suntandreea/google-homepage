@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    min-width: 400px;
+}
+
 body, input {
     font-size: 14px;
     font-family: Arial, sans-serif;
@@ -12,7 +17,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
  /* MAIN NAVIGATION */
+
+ nav {
+    flex-shrink: 0;
+    box-sizing: border-box;
+ }
 
 .nav-container {
     display: flex;
@@ -63,17 +79,35 @@ svg, path {
     color: #5f6368;
 }
 
-/* MAIN CONTENT */
+/* MAIN SECTIONS */
 
-main {
+section {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.google-logo {
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+
+.logo-container {
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: auto;
 }
 
 .logo {
-    max-height: 92px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
 }
 
 .search-form {
@@ -84,7 +118,7 @@ main {
 .search-box {
     width: auto;
     max-width: 584px;
-    width: 584px;
+    /* width: 584px; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -149,6 +183,10 @@ input[type=submit]:hover {
     border-color: #ddd;
 }
 
+.google-languages {
+    flex-grow: 1;
+}
+
 .add-lang {
     font-size: small;
     margin-bottom: 24px;
@@ -168,6 +206,8 @@ input[type=submit]:hover {
 footer {
     background: #f2f2f2;
     font-size: 15px;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .country {
@@ -187,22 +227,21 @@ footer {
     color: #70757a;
 }
 
-.ft-left {
+.ft-menu ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
 }
 
-.ft-right {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-footer li {
+.ft-menu li {
     padding: 15px;
+}
+
+@media only screen and (max-width:1200px) {
+    .ft-menu, .ft-menu ul {
+        justify-content:space-evenly;
+    }
 }
