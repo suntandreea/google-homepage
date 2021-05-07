@@ -79,7 +79,7 @@ a:hover {
 
 /* MAIN SECTIONS */
 
-section {
+.child {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -257,6 +257,12 @@ footer {
     border-bottom: 1px solid #dadce0;
     padding: 15px 30px;
     color: rgba(0,0,0,.54);
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch, .switch:visited {
+    color: rgb(52, 168, 83);
 }
 
 .ft-menu {
