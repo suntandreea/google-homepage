@@ -1,4 +1,18 @@
-.serp-menu {
+.search-results-page {
+    min-width: 1260px;
+}
+.spacing {
+    min-width: 850px;
+    margin-left: 170px;
+}
+
+em {
+    font-weight: bold;
+}
+
+/* MAIN NAVIGATION - TOP OF PAGE */
+
+.top-menu {
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -7,5 +21,140 @@
 .logo-top {
     height: 30px;
     width: auto;
-    margin-left: 24px;
+    margin-left: 20px;
 }
+
+/* SECONDARY NAVIGATION - SEARCH MENU */
+
+.search-menu {
+    height: 45px;
+    margin-top: 10px;
+    color: #5f6368;
+    font-family: 'Open Sans', Arial, sans-serif;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.search-menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.search-menu-container, .search-menu-left, .search-menu-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.search-menu-container {
+    width: 650px;
+}
+
+.search-menu-item {
+    border-bottom: 3px solid transparent;
+    margin-right: 24px;
+    padding: 15px 0 11px;
+}
+
+.search-menu-item:last-child {
+    margin-right: 0;
+}
+
+.active {
+    border-bottom: 3px solid #1a73e8;
+    color: #1a73e8;
+}
+
+.search-menu-item a {
+    display: flex;
+}
+
+.search-menu-svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill:#5f6368;
+}
+
+.icon-text {
+    padding-left: 5px;
+    line-height: 16px;
+}
+
+.tools:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    transition: all 0.0s;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.search-menu-right span {
+    padding: 4px 10px;
+    line-height: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.about-results {
+    height: 43px;
+    line-height: 43px;
+    color: #70757a;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* ACTUAL SEARCH RESULTS */
+
+.result {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    color: rgb(26, 13, 171);
+    padding-top: 5px;
+    margin-bottom: 3px;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+cite {
+    color: #202124;
+    line-height: 1.3;
+    display: flex; 
+    align-items: center;
+}
+
+cite::after {
+    content: "";
+    border: 5px solid transparent;
+    border-top-color: rgb(112, 117, 122);
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+.result-url a {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+}
+
+.res-url-gray {
+    color: #5f6368;
+    margin-left: 3px;
+}
+
+.result-desc {
+    color: #4d5156;
+    line-height: 1.58;
+}
+
+.date {
+    color: #70757a;
+}
+
+/* PEOPLE ASK SECTION */
