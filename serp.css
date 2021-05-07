@@ -1,0 +1,11 @@
+.serp-menu {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-top {
+    height: 30px;
+    width: auto;
+    margin-left: 24px;
+}

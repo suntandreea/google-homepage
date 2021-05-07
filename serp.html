@@ -4,29 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="serp.css" type="text/css">
     <script src="https://kit.fontawesome.com/4b39ae91a0.js" crossorigin="anonymous"></script>
     <title>Google</title>
 </head>
 <body>
     <div class="page-wrapper">
-        <nav>
-            <ul class="nav-container">
-                <li class="nav-item"><a class="nav-link" href="#">Gmail</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Images</a></li>
-                <li class="nav-item nav-circle">
-                    <svg class="g-apps" focusable="false" viewBox="0 0 24 24">
-                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
-                    </svg>
-                </li>
-                <li class="nav-item nav-circle"><a href="https://github.com/suntandreea"><img class="avatar" src="https://avatars.githubusercontent.com/u/12884472?v=4" alt="Andreea's Avatar"></a></li>
-            </ul>
-        </nav>
-    
-        <div class="child google-logo">
-            <div class="logo-container">
-                <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-            </div>
-        </div>
+        <!--     
 
         <div class="child google-search">
             <form method="GET" role="search"> 
@@ -40,16 +24,16 @@
                                 <div class="transp"></div>
                                 <input type="text" title="Search" value="" >
                             </div>
-                        </div><!-- end of inner -->
-                    </div><!-- end of search-box -->
-                </div><!-- end of search-container -->
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="btns">
                     <input type="submit" value="Google Search">
                     <input type="submit" value="I'm Feeling Lucky">
                 </div>
             </form>
-        </div><!-- end of google-search -->
+        </div>
 
         <div class="child google-languages">
             <div class="add-lang">
@@ -75,7 +59,115 @@
                     <li><a class="ft-link" href="#">Settings</a></li>
                 </ul>
             </div>
-        </footer>
+        </footer> -->
+    
+        <nav class="serp-menu">
+            <a href="#"><img class="logo-top" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"></a>
+            <ul class="nav-container">
+                <li class="nav-item nav-circle">
+                    <svg class="g-apps" focusable="false" viewBox="0 0 24 24">
+                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    </svg>
+                </li>
+                <li class="nav-item nav-circle"><a href="https://github.com/suntandreea"><img class="avatar" src="https://avatars.githubusercontent.com/u/12884472?v=4" alt="Andreea's Avatar"></a></li>
+            </ul>
+        </nav>
+
+
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+        <div class="result">
+            <div class="result-url">
+                <a href="">
+                    <h3></h3>
+                    <cite><span></span><span></span></cite>
+                </a>
+            </div>
+            <div class="result-desc"></div>
+        </div>
+    
+
+    
+    
     </div><!-- end of page-wrapper -->
 </body>
 </html>

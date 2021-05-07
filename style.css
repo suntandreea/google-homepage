@@ -59,6 +59,7 @@ a:hover {
 
 .nav-circle:hover {
     background: #eee;
+    cursor: pointer;
 }
 
 .nav-circle, .avatar {
