@@ -162,6 +162,7 @@ cite::after {
 .ppl-ask {
     overflow: hidden;
     width: 640px;
+    margin-bottom: 40px;
     }
 
 .ppl-ask h2 {
@@ -169,7 +170,6 @@ cite::after {
     line-height: 1.3;
     padding-bottom: 6px;
     border-bottom: 1px solid #eee;
-    margin-bottom: 6px;
 }
 
 .ppl-ask input {
@@ -182,12 +182,14 @@ cite::after {
     width: 100%;
     overflow: hidden;
     border-bottom: 1px solid #eee;
+    font-size: 16px;
 }
 
 .ques-title {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    padding: 14px 0;
 }
 
 .ques-title::after {
@@ -203,6 +205,10 @@ cite::after {
     transition: all .35s;
 }
 
+.ques-text p {
+    padding: 20px 0;
+    line-height: 1.5;
+}
 input:checked + .ques-title::after {
     transform: rotate(90deg);
 }
@@ -217,7 +223,7 @@ b {
 
 .ques-list {
     list-style: decimal;
-    margin: 10px 0 10px 16px;
+    margin-left: 18px;
 }
 
 .ques-list li {
@@ -225,12 +231,52 @@ b {
 }
 
 .source-date {
-    margin-bottom: 20px;
     color: #70757a;
     font-size: 12px;
 }
 
+.ques-text p.source-date {
+    margin-bottom: 20px;
+    padding: 6px 0 0;
+} 
+
 h4 {
     font-weight: bold;
-    margin-top: 30px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 14px 0 10px;
+}
+
+.ques-text p.source {
+    padding-bottom: 8px;
+} 
+
+.source a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.video-box {
+    border-radius: 8px;
+    background: #f0f6fd;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-desc {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-desc::before {
+    content:"";
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #f0f6fd;
+    position: absolute;
+    left: 220px;
+    bottom: -441px;
+    transform: scale(1, 1.2);
 }
