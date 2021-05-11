@@ -193,16 +193,21 @@ cite::after {
 }
 
 .ques-title::after {
-    content: "\276F";
-    width: 1em;
-    height: 1em;
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    display: block;
+    border-left: 2px solid #70757a;
+    border-bottom: 2px solid #70757a;
     text-align: center;
-    transition: all .35s;
+    transition: all .05s;
+    transform: rotate(-45deg);
 }
 
 .ques-text {
     max-height: 0;
-    transition: all .35s;
+    transition: all .5s;
 }
 
 .ques-text p {
@@ -210,7 +215,7 @@ cite::after {
     line-height: 1.5;
 }
 input:checked + .ques-title::after {
-    transform: rotate(90deg);
+    transform: rotate(135deg);
 }
 
 input:checked ~ .ques-text {
@@ -279,4 +284,15 @@ h4 {
     left: 220px;
     bottom: -441px;
     transform: scale(1, 1.2);
+}
+
+.fbk {
+    position: relative;
+    background:white;
+    font-size: 12px;
+    color: #70757a;
+    display: inline-block;
+    left: 572px;
+    top: -8px;
+    padding-left: 14px;
 }
