@@ -158,3 +158,79 @@ cite::after {
 }
 
 /* PEOPLE ASK SECTION */
+
+.ppl-ask {
+    overflow: hidden;
+    width: 640px;
+    }
+
+.ppl-ask h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 6px;
+}
+
+.ppl-ask input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.question {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.ques-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.ques-title::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all .35s;
+}
+
+.ques-text {
+    max-height: 0;
+    transition: all .35s;
+}
+
+input:checked + .ques-title::after {
+    transform: rotate(90deg);
+}
+
+input:checked ~ .ques-text {
+    max-height: 100vh;
+}
+
+b {
+    font-weight: bold;
+}
+
+.ques-list {
+    list-style: decimal;
+    margin: 10px 0 10px 16px;
+}
+
+.ques-list li {
+    padding: 4px 0;
+}
+
+.source-date {
+    margin-bottom: 20px;
+    color: #70757a;
+    font-size: 12px;
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: 30px;
+}
