@@ -61,7 +61,7 @@ em {
     margin-right: 0;
 }
 
-.active {
+.search-menu-item.active {
     border-bottom: 3px solid #1a73e8;
     color: #1a73e8;
 }
@@ -163,7 +163,7 @@ cite::after {
 .ppl-ask {
     overflow: hidden;
     width: 640px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     }
 
 .ppl-ask h2 {
@@ -299,6 +299,10 @@ h4 {
 }
 
 /* RELATED SEARCHES SECTION */
+
+.ppl-ask.btm {
+    margin-bottom: 20px;
+}
 
 .img-list {
     display: flex;
@@ -539,6 +543,42 @@ a.website-top {
 .scd {
     top: -8px;
 }
+
+/* BOTTOM SEARCH TAGS */
+
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 640px;
+    margin-left: 170px;
+}
+
+.tag {
+    width: 310px;
+    margin-bottom: 10px;
+}
+
+.tag a {
+    background-color: #f1f3f4;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 48px;
+}
+
+.tag span {
+    color: #202124;
+    font-size: 16px;
+}
+
+.tag span:nth-child(1){
+    padding: 10px;
+    margin-right: 10px;
+    color: #6f7070;
+}
+
 
 /* FOOTER */
 
